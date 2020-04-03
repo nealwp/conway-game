@@ -9,4 +9,4 @@ My first foray in JavaScript. I've always found Conway's Game of Life intriguing
 * Vanilla JS
 
 ## Credits
-Getting me up and running: [MDN: JavaScript First Steps](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps)
+Getting me up and running: [MDN - JavaScript First Steps](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps)
