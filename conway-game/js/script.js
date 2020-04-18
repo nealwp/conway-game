@@ -13,12 +13,14 @@ var startIsClicked = false;
 var btnStart = doc.getElementById('start');
 var btnStop = doc.getElementById('stop');
 var btnReset = doc.getElementById('reset');
+var btnRandom = doc.getElementById('random');
 
 /******** add event listeners *******/
 
 btnStart.addEventListener('click', startEvents);
 btnStop.addEventListener('click', function(){startIsClicked = false});
 btnReset.addEventListener('click', resetGrid);
+btnRandom.addEventListener('click', randomizeGrid)
 addEventListener('mousedown', function(){mouseIsDown = true});
 addEventListener('mouseup', function(){mouseIsDown = false});
 
@@ -205,6 +207,17 @@ function repaintGrid(){
              } else {
                  resurrect(grid[y][x].cellRef); 
              }
+         }
+     }
+ }
+
+ function randomizeGrid(){
+    resetGrid(); 
+    for (let y = 0; y < rows; y++){
+         for (let x = 0; x < cols; x++){
+             if (1 == Math.round(Math.random())){
+                resurrect(grid[y][x].cellRef);
+             } 
          }
      }
  }
